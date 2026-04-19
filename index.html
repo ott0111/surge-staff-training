@@ -7,16 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#070312;
-  --bg2:#0e0720;
-  --card:#120a26;
-  --soft:#1a1036;
-  --accent:#8b5cf6;
-  --accent2:#c084fc;
-  --accent3:#6d28d9;
-  --text:#f5f3ff;
-  --muted:#bfb6e6;
-  --glow:0 0 40px rgba(139,92,246,.35);
+  --bg:#120a00;
+  --bg2:#1f1500;
+  --card:#261a00;
+  --soft:#3a2a00;
+  --accent:#d4af37;
+  --accent2:#f5d76e;
+  --accent3:#a67c00;
+  --text:#fffbea;
+  --muted:#e6d8a8;
+  --glow:0 0 40px rgba(212,175,55,.35);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -25,8 +25,8 @@ body{
   font-family:'Inter',system-ui,Segoe UI,Roboto,Arial;
   color:var(--text);
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(139,92,246,.25), transparent 60%),
-    radial-gradient(1000px 500px at -10% 10%, rgba(192,132,252,.18), transparent 60%),
+    radial-gradient(1200px 600px at 80% -10%, rgba(212,175,55,.25), transparent 60%),
+    radial-gradient(1000px 500px at -10% 10%, rgba(245,215,110,.18), transparent 60%),
     linear-gradient(180deg,var(--bg),var(--bg2) 40%,var(--bg));
 }
 .container{width:min(1250px,92%);margin:auto}
@@ -42,7 +42,7 @@ header{
   font-size:12px;
   letter-spacing:.6px;
   text-transform:uppercase;
-  background:linear-gradient(90deg,rgba(139,92,246,.18),rgba(192,132,252,.18));
+  background:linear-gradient(90deg,rgba(212,175,55,.18),rgba(245,215,110,.18));
   border:1px solid rgba(255,255,255,.08);
   backdrop-filter: blur(6px);
 }
@@ -51,7 +51,7 @@ h1{
   margin:18px 0 16px;
   font-weight:900;
   letter-spacing:-1px;
-  background:linear-gradient(90deg,#ffffff,#dcd6ff 40%,#ffffff);
+  background:linear-gradient(90deg,#ffffff,#fff3c4 40%,#ffffff);
   -webkit-background-clip:text;
   color:transparent;
 }
@@ -68,7 +68,7 @@ h1{
   border-radius:14px;
   font-weight:700;
   font-size:14px;
-  background:linear-gradient(180deg,var(--soft),#140b2b);
+  background:linear-gradient(180deg,var(--soft),#2a1c00);
   border:1px solid rgba(255,255,255,.06);
   box-shadow:var(--glow);
 }
@@ -77,7 +77,7 @@ h1{
 .progress-wrap{margin:50px auto 0;max-width:560px;text-align:left}
 .progress-label{font-size:12px;color:var(--muted);margin-bottom:10px;letter-spacing:.7px;text-transform:uppercase}
 .progress-bar{width:100%;height:16px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
-.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent3),var(--accent),var(--accent2));box-shadow:0 0 30px rgba(139,92,246,.6);transition:width .5s ease}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent3),var(--accent),var(--accent2));box-shadow:0 0 30px rgba(212,175,55,.6);transition:width .5s ease}
 
 .section{padding:110px 0;position:relative}
 .section:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:180px;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.6}
@@ -88,7 +88,7 @@ h1{
 .cards-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 
 .card{
-  background:linear-gradient(180deg,var(--card),#0e0820);
+  background:linear-gradient(180deg,var(--card),#1f1400);
   border:1px solid rgba(255,255,255,.06);
   border-radius:22px;
   padding:28px;
@@ -99,218 +99,24 @@ h1{
 .list{padding-left:18px;margin:12px 0 0}
 .list li{margin:8px 0;color:var(--muted)}
 
-.protocol{margin-top:26px;padding:20px;border-radius:18px;background:linear-gradient(90deg,rgba(139,92,246,.12),rgba(192,132,252,.12));border:1px solid rgba(255,255,255,.08);color:#ddd6ff}
+.protocol{margin-top:26px;padding:20px;border-radius:18px;background:linear-gradient(90deg,rgba(212,175,55,.12),rgba(245,215,110,.12));border:1px solid rgba(255,255,255,.08);color:#fff3c4}
 
 .metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-.metric{background:linear-gradient(180deg,#140c2b,#0f0a22);border:1px solid rgba(255,255,255,.06);padding:22px;border-radius:18px}
+.metric{background:linear-gradient(180deg,#2a1c00,#1a1200);border:1px solid rgba(255,255,255,.06);padding:22px;border-radius:18px}
 .metric h4{margin:0 0 10px}
 
 .guidelines{display:grid;gap:22px}
-.guideline{padding:22px;border-radius:18px;background:linear-gradient(180deg,#140c2b,#0f0a22);border:1px solid rgba(255,255,255,.06)}
+.guideline{padding:22px;border-radius:18px;background:linear-gradient(180deg,#2a1c00,#1a1200);border:1px solid rgba(255,255,255,.06)}
 
 .rolebox{margin-top:12px;padding:14px;background:var(--soft);border-radius:14px;color:var(--muted);font-size:14px}
 
-.cta{text-align:center;padding:130px 0;background:radial-gradient(circle at 50% 120%,rgba(139,92,246,.35),transparent 60%)}
+.cta{text-align:center;padding:130px 0;background:radial-gradient(circle at 50% 120%,rgba(212,175,55,.35),transparent 60%)}
 .cta h2{font-size:44px;margin-bottom:16px}
 .cta p{color:var(--muted);margin-bottom:34px;font-size:18px}
-.btn{display:inline-block;padding:18px 44px;font-size:18px;font-weight:800;border-radius:16px;background:linear-gradient(90deg,var(--accent3),var(--accent),var(--accent2));color:white;text-decoration:none;box-shadow:0 20px 50px rgba(139,92,246,.5);transition:.25s transform,.25s box-shadow}
-.btn:hover{transform:translateY(-4px);box-shadow:0 30px 70px rgba(139,92,246,.7)}
+.btn{display:inline-block;padding:18px 44px;font-size:18px;font-weight:800;border-radius:16px;background:linear-gradient(90deg,var(--accent3),var(--accent),var(--accent2));color:white;text-decoration:none;box-shadow:0 20px 50px rgba(212,175,55,.5);transition:.25s transform,.25s box-shadow}
+.btn:hover{transform:translateY(-4px);box-shadow:0 30px 70px rgba(212,175,55,.7)}
 
 footer{border-top:1px solid rgba(255,255,255,.06);padding:30px 0;text-align:center;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="container">
-    <div class="badge">Surge Esports Staff Certification</div>
-    <h1>Surge Mod Training</h1>
-    <p class="subtitle">Comprehensive certification program for new Surge Esports moderators. This extended training ensures every staff member communicates professionally, handles tickets correctly, and represents Surge Esports at the highest standard.</p>
-
-    <div class="steps">
-      <div class="step">Learn</div>
-      <div class="step">Practice</div>
-      <div class="step">Demonstrate</div>
-      <div class="step">Certify</div>
-    </div>
-
-    <div class="progress-wrap">
-      <div class="progress-label">Training Progress</div>
-      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
-    </div>
-
-    <div class="credit">Made by Yeezy</div>
-  </div>
-</header>
-
-<section class="section">
-  <div class="container">
-    <h2>Professional Conduct Standards</h2>
-    <div class="grid cards-3">
-      <div class="card"><h3>Professional Language</h3><p>Always communicate clearly and respectfully. ASurge slang, sarcasm, or dismissive responses. Staff represent the organization at all times.</p></div>
-      <div class="card"><h3>Respectful Tone</h3><p>Remain calm with frustrated users. Never argue. Focus on solutions and keep interactions constructive.</p></div>
-      <div class="card"><h3>Response Quality</h3><p>Provide complete answers. Do not give one-word replies. Explain steps clearly so users understand what to do.</p></div>
-      <div class="card"><h3>Authority & Responsibility</h3><p>Do not misuse permissions. Moderation tools exist to protect the community, not for personal disputes.</p></div>
-      <div class="card"><h3>Confidentiality</h3><p>Never share private staff discussions, reports, or internal decisions with regular members.</p></div>
-      <div class="card"><h3>Reliability</h3><p>Be dependable. If you claim a ticket or task, complete it fully instead of leaving it for others.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Ticket System Mastery</h2>
-    <div class="grid cards-2">
-      <div class="card"><h3>General Tickets</h3><p>Support inquiries, assistance requests, and reports. Handle politely and escalate serious issues properly.</p></div>
-      <div class="card"><h3>Roster Tickets</h3><p>Applications to join Surge Esports. Must follow structured onboarding and verification steps.</p></div>
-    </div>
-    <div class="protocol"><strong>Protocol:</strong> Begin with a professional greeting and age verification. Maintain detailed records and guide users clearly through next steps.<br><br><strong>Important:</strong> Tickets labeled <strong>ticket-staff</strong> are for Staff Department members or higher only. Many new staff forget this rule.</div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Roster Categories & Requirements</h2>
-    <div class="grid cards-3">
-
-      <div class="card"><h3>🏆 Pro Roster</h3><ul class="list"><li>25,000+ Power Ranking</li><li>$1,000+ Fortnite Earnings</li><li>Place and earn consistently</li><li>Represent Surge in-game & on socials</li></ul></div>
-
-      <div class="card"><h3>🎮 Semi-Pro</h3><ul class="list"><li>10,000–25,000 PR</li><li>Place consistently</li><li>Represent Surge in-game</li><li>Use Fortnite Code</li><li>Earnings required</li></ul></div>
-
-      <div class="card"><h3>🎓 Academy Roster</h3><ul class="list"><li>500–10,000 PR</li><li>Place consistently</li><li>Represent Surge in-game</li><li>Use Fortnite Code</li></ul></div>
-
-      <div class="card"><h3>🎨 Creative Roster</h3><ul class="list"><li>Smooth / fast mechanics</li><li>Unique playstyle</li><li>Provide clips when asked</li><li>Represent Surge in-game & on socials</li></ul></div>
-
-      <div class="card"><h3>🎙️ Streamer</h3><ul class="list"><li>1k+ Followers/Subscribers</li><li>25+ Average Viewers</li><li>Stream at least 4x weekly</li><li>Use Surge hashtags</li><li>Represent Surge in-game & on socials</li></ul></div>
-
-      <div class="card"><h3>🎥 Content Creator</h3><ul class="list"><li>1k+ Twitch/YouTube</li><li>10k+ TikTok</li><li>Original high-quality posts</li><li>Help with Surge content</li><li>Post actively</li></ul></div>
-
-      <div class="card"><h3>🎬 Junior Content Creator</h3><ul class="list"><li>500+ Twitch/YouTube</li><li>3k+ TikTok</li><li>High quality original posts</li><li>Grinding toward main roster</li><li>Represent Surge in-game & socials</li></ul></div>
-
-      <div class="card"><h3>🖌️ GFX / VFX</h3><ul class="list"><li>Editing experience required</li><li>Portfolio required</li><li>1440p+ quality work</li><li>Assist staff and roster</li><li>Deliver work on time</li></ul></div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Leave of Absence (LOA) Format</h2>
-    <div class="card">
-      <p>We do not use commands for LOA. Use this exact format:</p>
-      <div class="rolebox">
-        <strong>User :</strong> ———-<br>
-        <strong>Role :</strong> ———-<br>
-        <strong>Start Time :</strong> ———-<br>
-        <strong>End Time :</strong> ———-<br>
-        <strong>Reason :</strong> ————-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Moderator Performance Expectations</h2>
-    <div class="metric-grid">
-      <div class="metric"><h4>Ticket Accuracy</h4><p>Follow correct procedures without skipping verification steps.</p></div>
-      <div class="metric"><h4>Activity Level</h4><p>Remain active and responsive within moderation channels.</p></div>
-      <div class="metric"><h4>Decision Making</h4><p>Use evidence before issuing punishments or escalating cases.</p></div>
-      <div class="metric"><h4>Team Coordination</h4><p>Communicate with other staff to prevent duplicate handling.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Ticket Handling Guidelines</h2>
-    <div class="card">
-      <p><strong>Here is how you should proceed in tickets:</strong></p>
-      <p>Remember to be professional at all times. Refrain from using informal responses like "Yo", "Hi", or "Bro". Always start with a friendly and professional greeting.</p>
-    </div>
-
-    <div class="grid cards-2" style="margin-top:26px">
-      <div class="card">
-        <h3>Professional Greetings</h3>
-        <div class="rolebox">
-          Hello, how may I help you?<br>
-          Hello, what can I assist you with today?
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Role Inquiry</h3>
-        <div class="rolebox">
-          What role are you applying for today?<br>
-          What are you applying for here?
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Age Verification</h3>
-        <div class="rolebox">
-          May I ask how old you are?<br>
-          What is your current age?
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Blacklist Format</h3>
-        <div class="rolebox">
-          User: Username of the person<br>
-          User ID: Discord ID<br>
-          Reason: Underage
-        </div>
-      </div>
-    </div>
-
-    <h2 style="margin-top:70px">Role-Specific Instructions</h2>
-    <div class="grid cards-2">
-
-      <div class="card"><h3>Creative Roles</h3><div class="rolebox">@Creative Academy<br>@Main Creative<br><br>Perfect! Please send two-three clips and @Creative Department will be here shortly to review them!</div></div>
-
-      <div class="card"><h3>Academy Roster</h3><div class="rolebox">Please link your tracker below with an image of the default dance in lobby!</div></div>
-
-      <div class="card"><h3>Semi-Pro / Pro Roster</h3><div class="rolebox">Perfect! Please send your tracker below with an image of the default dance in lobby! @operations will be here shortly to review!</div></div>
-
-      <div class="card"><h3>GFX / VFX</h3><div class="rolebox">@Surge VFX<br>@Surge GFX<br><br>Alright, please link your previous work and/or portfolio below and @GFX / VFX Lead will be here shortly to review.</div></div>
-
-      <div class="card"><h3>Content Creator</h3><div class="rolebox">Perfect! Please link your social media accounts below and @Content Department will review them shortly!</div></div>
-
-      <div class="card"><h3>Coach</h3><div class="rolebox">How many people have you coached previously? Can you link their trackers below!</div></div>
-
-      <div class="card"><h3>Surge Grinder+</h3><div class="rolebox">Unfortunately you do not qualify for any roles, however we can offer you Grinder+!<br><br>Send a screenshot of using our support creator code "Team.Surge".<br>Send a screenshot of changing your Epic Games username to include "Surge".<br>Use our Discord "Surge" tag!</div></div>
-
-      <div class="card"><h3>Closing the Ticket</h3><div class="rolebox">Final Steps:<br><br>Perfect! Please change your name to have "Surge" in it and send a screenshot of using our code!<br><br>Once they send the images:<br><br>Thank you! Here are your roles! Have a nice day!</div></div>
-
-    </div>
-
-    <div class="protocol" style="margin-top:40px">
-      📌 <strong>Important:</strong> Always maintain professionalism throughout the entire interaction. Document all steps and escalate to senior staff when necessary.
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <h2>Complete Your Certification Test</h2>
-    <p>Review all sections carefully. When ready, proceed to the official moderator assessment.</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdwhpQEk86xNvnqB84vLrpB17GhCTHmw1Tu-YmUwoQ23rw8bQ/viewform?usp=sharing&ouid=114687008271274137261" target="_blank">Take Test</a>
-  </div>
-</section>
-
-<footer>
-  Surge Esports Moderator Training • Internal Certification System
-</footer>
-
-<script>
-const fill = document.getElementById('progressFill');
-window.addEventListener('scroll', () => {
-  const h = document.documentElement;
-  const percent = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-  fill.style.width = percent + '%';
-});
-</script>
-
-</body>
-</html>
